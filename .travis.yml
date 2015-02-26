@@ -1,3 +1,9 @@
+gemfile:
+  - Gemfile
+  - components/app/Gemfile
+script:
+  - ./test.sh
+before_install:
+  - cd $(dirname $BUNDLE_GEMFILE)
 rvm:
-  - "2.2.0"
-script: "./build.sh"
+  - 2.2.0
