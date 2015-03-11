@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.0'
 
 gem "app", path: "components/app"
 
@@ -23,4 +24,5 @@ end
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
