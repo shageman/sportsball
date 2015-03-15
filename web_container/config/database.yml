@@ -21,5 +21,8 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: oypmutne
+  username: oypmutne
+  password: ac9XG9D1TFg-EL71JNcHy3m8X-rp5F7O
+  host: babar.elephantsql.com

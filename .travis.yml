@@ -1,5 +1,5 @@
 gemfile:
-  - Gemfile
+  - web_container/Gemfile
   - components/app/Gemfile
 script:
   - ./test.sh
