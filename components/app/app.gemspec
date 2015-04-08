@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["The CBRA Book"]
   s.summary     = "CBRA component"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
+  s.files = Dir["{app,config,db,lib}/**/*", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "4.1.9"
   s.add_dependency "slim-rails", "3.0.1"
