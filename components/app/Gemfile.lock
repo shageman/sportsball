@@ -10,8 +10,14 @@ PATH
   specs:
     app (0.0.1)
       jquery-rails (= 3.1.2)
+      predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
+
+PATH
+  remote: ../
+  specs:
+    predictor (0.0.1)
       trueskill
 
 GEM
@@ -140,6 +146,7 @@ DEPENDENCIES
   app!
   capybara
   database_cleaner
+  predictor!
   rspec-rails
   shoulda-matchers
   sqlite3

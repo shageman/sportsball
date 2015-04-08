@@ -5,7 +5,7 @@ module App
     end
 
     def create
-      predictor = Predictor.new(App::Team.all)
+      predictor = Predictor::Predictor.new(App::Team.all)
       predictor.learn(App::Game.all)
       @prediction = predictor.predict(
           App::Team.find(params['first_team']['id']),

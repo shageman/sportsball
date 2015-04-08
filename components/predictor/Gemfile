@@ -1,9 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
+# Specify your gem's dependencies in predictor.gemspec
 gemspec
 
 gem "trueskill", git: "https://github.com/benjaminleesmith/trueskill", ref: "e404f45af5b3fb86982881ce064a9c764cc6a901"
-
-path "../" do
-  gem "predictor"
-end

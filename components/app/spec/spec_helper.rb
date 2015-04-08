@@ -7,7 +7,6 @@ require 'shoulda/matchers'
 require 'database_cleaner'
 require 'capybara/rails'
 require 'capybara/rspec'
-require 'ostruct'
 
 Dir[App::Engine.root.join("spec/support/**/*.rb")].each {|f| require f}
 

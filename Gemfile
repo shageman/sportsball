@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 ruby '2.2.2'
 
-gem "app", path: "components/app"
+path "components" do
+  gem "app"
+end
 
 #Ensuring correct version of transitive dependency
 gem "trueskill", git: "https://github.com/benjaminleesmith/trueskill", ref: "e404f45af5b3fb86982881ce064a9c764cc6a901"
