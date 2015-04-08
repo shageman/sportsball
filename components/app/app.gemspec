@@ -1,12 +1,6 @@
-$:.push File.expand_path("../lib", __FILE__)
-
-# Maintain your gem's version:
-require "app/version"
-
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "app"
-  s.version     = App::VERSION
+  s.version     = "0.0.1"
   s.authors     = ["The CBRA Book"]
   s.summary     = "CBRA component"
 
