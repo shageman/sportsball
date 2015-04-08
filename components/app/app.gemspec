@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.authors     = ["The CBRA Book"]
   s.summary     = "CBRA component"
 
-  s.test_files = Dir["test/**/*"]
+  s.test_files = Dir["spec/**/*"]
   s.files = Dir["{app,config,db,lib}/**/*", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "4.1.9"
