@@ -13,8 +13,11 @@ PATH
       predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
+      teams
     predictor (0.0.1)
       trueskill
+    teams (0.0.1)
+      activerecord (= 4.1.9)
 
 GEM
   remote: https://rubygems.org/

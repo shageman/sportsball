@@ -1,6 +1,6 @@
 RSpec.describe "app/teams/new", :type => :view do
   before(:each) do
-    assign(:team, App::Team.new(
+    assign(:team, Teams::Team.new(
       :name => "MyString"
     ))
   end

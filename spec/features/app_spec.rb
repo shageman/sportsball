@@ -23,8 +23,8 @@ RSpec.describe "Engine 'App'", :type => :feature do
   end
 
   it "can predict" do
-    App::Team.create! name: "UofL"
-    App::Team.create! name: "UK"
+    create_team name: "UofL"
+    create_team name: "UK"
 
     visit "/"
     click_link "Predictions"

@@ -8,6 +8,8 @@ require 'database_cleaner'
 require 'capybara/rails'
 require 'capybara/rspec'
 
+require 'teams/test_helpers'
+
 Dir[App::Engine.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
@@ -35,5 +37,6 @@ RSpec.configure do |config|
     end
   end
 
-  config.include ObjectCreationMethods
+  config.include App::ObjectCreationMethods
+  config.include Teams::ObjectCreationMethods
 end

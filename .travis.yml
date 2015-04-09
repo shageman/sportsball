@@ -2,6 +2,7 @@ gemfile:
   - Gemfile
   - components/app/Gemfile
   - components/predictor/Gemfile
+  - components/teams/Gemfile
 script:
   - travis_retry ./test.sh
 before_install:

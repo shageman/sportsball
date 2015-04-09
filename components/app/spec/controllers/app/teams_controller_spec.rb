@@ -16,7 +16,7 @@ RSpec.describe App::TeamsController, :type => :controller do
   describe "GET new" do
     it "assigns a new team as @team" do
       get :new, {}, valid_session
-      expect(assigns(:team)).to be_a_new(App::Team)
+      expect(assigns(:team)).to be_a_new(Teams::Team)
     end
   end
 
@@ -30,15 +30,15 @@ RSpec.describe App::TeamsController, :type => :controller do
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new App::Team" do
+      it "creates a new Teams::Team" do
         expect {
           post :create, {:team => valid_attributes}, valid_session
-        }.to change(App::Team, :count).by(1)
+        }.to change(Teams::Team, :count).by(1)
       end
 
       it "assigns a newly created team as @team" do
         post :create, {:team => valid_attributes}, valid_session
-        expect(assigns(:team)).to be_a(App::Team)
+        expect(assigns(:team)).to be_a(Teams::Team)
         expect(assigns(:team)).to be_persisted
       end
 
@@ -51,7 +51,7 @@ RSpec.describe App::TeamsController, :type => :controller do
     describe "with invalid params" do
       it "assigns a newly created but unsaved team as @team" do
         post :create, {:team => invalid_attributes}, valid_session
-        expect(assigns(:team)).to be_a_new(App::Team)
+        expect(assigns(:team)).to be_a_new(Teams::Team)
       end
 
       it "re-renders the 'new' template" do
@@ -107,7 +107,7 @@ RSpec.describe App::TeamsController, :type => :controller do
       team = create_team
       expect {
         delete :destroy, {:id => team.to_param}, valid_session
-      }.to change(App::Team, :count).by(-1)
+      }.to change(Teams::Team, :count).by(-1)
     end
 
     it "redirects to the teams list" do

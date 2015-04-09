@@ -1,10 +1,10 @@
 RSpec.describe "app/teams/index", :type => :view do
   before(:each) do
     assign(:teams, [
-                     App::Team.create!(
+                     Teams::Team.create!(
                          :name => "Name"
                      ),
-                     App::Team.create!(
+                     Teams::Team.create!(
                          :name => "Name"
                      )
                  ])

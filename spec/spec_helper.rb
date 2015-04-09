@@ -6,6 +6,8 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/rspec'
 
+require 'teams/test_helpers'
+
 Dir[App::Engine.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
@@ -21,4 +23,6 @@ RSpec.configure do |config|
   config.profile_examples = nil
   config.order = :random
   Kernel.srand config.seed
+
+  config.include Teams::ObjectCreationMethods
 end
