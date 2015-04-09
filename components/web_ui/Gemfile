@@ -7,4 +7,5 @@ gem "trueskill", git: "https://github.com/benjaminleesmith/trueskill", ref: "e40
 path "../" do
   gem "predictor"
   gem "games"
+  gem "web_style"
 end

@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = "web_ui"
+  s.name        = "web_style"
   s.version     = "0.0.1"
   s.authors     = ["The CBRA Book"]
   s.summary     = "CBRA component"
@@ -10,14 +10,4 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "4.1.9"
   s.add_dependency "slim-rails", "3.0.1"
   s.add_dependency "jquery-rails", "3.1.2"
-
-  s.add_dependency "predictor"
-  s.add_dependency "games"
-  s.add_dependency "web_style"
-
-  s.add_development_dependency "sqlite3"
-  s.add_development_dependency "rspec-rails"
-  s.add_development_dependency "shoulda-matchers"
-  s.add_development_dependency "database_cleaner"
-  s.add_development_dependency "capybara"
 end

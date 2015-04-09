@@ -6,8 +6,8 @@ html
 
     title Sportsball App
 
-    = javascript_include_tag "web_ui/application"
-    = stylesheet_link_tag    "web_ui/application", media: "all"
+    = javascript_include_tag "web_style/application"
+    = stylesheet_link_tag    "web_style/application", media: "all"
 
     = csrf_meta_tags
 
@@ -18,7 +18,7 @@ html
           li.name
             h1
               = link_to root_path do
-                = image_tag "web_ui/logo.png", width: "25px"
+                = image_tag "web_style/logo.png", width: "25px"
                 | Predictor
 
           li.toggle-topbar.menu-icon
