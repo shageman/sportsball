@@ -3,18 +3,18 @@ module App
     before_action :set_team, only: [:show, :edit, :update, :destroy]
 
     def index
-      @teams = Team.all
+      @teams = App::Team.all
     end
 
     def new
-      @team = Team.new
+      @team = App::Team.new
     end
 
     def edit
     end
 
     def create
-      @team = Team.new(team_params)
+      @team = App::Team.new(team_params)
 
       if @team.save
         redirect_to teams_url, notice: 'Team was successfully created.'
@@ -38,7 +38,7 @@ module App
 
     private
       def set_team
-        @team = Team.find(params[:id])
+        @team = App::Team.find(params[:id])
       end
 
       def team_params

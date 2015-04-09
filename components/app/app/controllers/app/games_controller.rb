@@ -3,21 +3,21 @@ module App
     before_action :set_game, only: [:show, :edit, :update, :destroy]
 
     def index
-      @games = Game.all
+      @games = App::Game.all
     end
 
     def show
     end
 
     def new
-      @game = Game.new
+      @game = App::Game.new
     end
 
     def edit
     end
 
     def create
-      @game = Game.new(game_params)
+      @game = App::Game.new(game_params)
 
       if @game.save
         redirect_to @game, notice: 'Game was successfully created.'
@@ -41,7 +41,7 @@ module App
 
     private
       def set_game
-        @game = Game.find(params[:id])
+        @game = App::Game.find(params[:id])
       end
 
       def game_params
