@@ -1,6 +1,6 @@
 gemfile:
   - Gemfile
-  - components/app/Gemfile
+  - components/web_ui/Gemfile
   - components/predictor/Gemfile
   - components/teams/Gemfile
   - components/games/Gemfile

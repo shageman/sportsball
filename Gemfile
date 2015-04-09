@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby '2.2.2'
 
 path "components" do
-  gem "app"
+  gem "web_ui"
 end
 
 #Ensuring correct version of transitive dependency

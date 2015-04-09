@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  mount WebUi::Engine, at: "/"
+
+  mount WebUi::Engine => "/web_ui"
 end
