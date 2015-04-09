@@ -9,15 +9,18 @@ PATH
   remote: .
   specs:
     app (0.0.1)
+      games
       jquery-rails (= 3.1.2)
       predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
-      teams
 
 PATH
   remote: ../
   specs:
+    games (0.0.1)
+      activerecord (= 4.1.9)
+      teams
     predictor (0.0.1)
       trueskill
     teams (0.0.1)
@@ -149,9 +152,9 @@ DEPENDENCIES
   app!
   capybara
   database_cleaner
+  games!
   predictor!
   rspec-rails
   shoulda-matchers
   sqlite3
-  teams!
   trueskill!

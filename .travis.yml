@@ -3,6 +3,7 @@ gemfile:
   - components/app/Gemfile
   - components/predictor/Gemfile
   - components/teams/Gemfile
+  - components/games/Gemfile
 script:
   - travis_retry ./test.sh
 before_install:

@@ -1,4 +1,4 @@
-RSpec.describe App::Game do
+RSpec.describe Games::Game do
   it { should validate_presence_of(:date) }
   it { should validate_presence_of(:location) }
   it { should validate_presence_of(:first_team) }

@@ -1,4 +1,4 @@
-module App::ObjectCreationMethods
+module Games::ObjectCreationMethods
   def new_game(overrides = {})
     defaults = {
         first_team: -> { new_team },
@@ -10,7 +10,7 @@ module App::ObjectCreationMethods
         date: Date.today
     }
 
-    App::Game.new { |game| apply(game, defaults, overrides) }
+    Games::Game.new { |game| apply(game, defaults, overrides) }
   end
 
   def create_game(overrides = {})

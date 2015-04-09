@@ -9,10 +9,13 @@ PATH
   remote: components
   specs:
     app (0.0.1)
+      games
       jquery-rails (= 3.1.2)
       predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
+    games (0.0.1)
+      activerecord (= 4.1.9)
       teams
     predictor (0.0.1)
       trueskill
