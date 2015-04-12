@@ -19,6 +19,14 @@ PATH
       web_style
     predictor (0.0.1)
       trueskill
+    predictor_ui (0.0.1)
+      games
+      jquery-rails (= 3.1.2)
+      predictor
+      rails (= 4.1.9)
+      slim-rails (= 3.0.1)
+      teams
+      web_style
     teams (0.0.1)
       activerecord (= 4.1.9)
     teams_ui (0.0.1)
@@ -32,12 +40,9 @@ PATH
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
     web_ui (0.0.1)
-      games
       jquery-rails (= 3.1.2)
-      predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
-      teams
       web_style
 
 GEM
@@ -200,6 +205,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  predictor_ui!
   rails (= 4.1.9)
   rails_12factor
   rspec-rails

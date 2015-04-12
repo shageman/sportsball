@@ -5,6 +5,7 @@ path "components" do
   gem "web_ui"
   gem "teams_ui"
   gem "games_ui"
+  gem "predictor_ui"
 end
 
 #Ensuring correct version of transitive dependency

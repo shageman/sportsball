@@ -9,24 +9,14 @@ PATH
   remote: .
   specs:
     web_ui (0.0.1)
-      games
       jquery-rails (= 3.1.2)
-      predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
-      teams
       web_style
 
 PATH
   remote: ../
   specs:
-    games (0.0.1)
-      activerecord (= 4.1.9)
-      teams
-    predictor (0.0.1)
-      trueskill
-    teams (0.0.1)
-      activerecord (= 4.1.9)
     web_style (0.0.1)
       jquery-rails (= 3.1.2)
       rails (= 4.1.9)
@@ -157,12 +147,9 @@ PLATFORMS
 DEPENDENCIES
   capybara
   database_cleaner
-  games!
-  predictor!
   rspec-rails
   shoulda-matchers
   sqlite3
-  teams!
   trueskill!
   web_style!
   web_ui!

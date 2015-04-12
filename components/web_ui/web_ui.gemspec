@@ -11,9 +11,6 @@ Gem::Specification.new do |s|
   s.add_dependency "slim-rails", "3.0.1"
   s.add_dependency "jquery-rails", "3.1.2"
 
-  s.add_dependency "predictor"
-  s.add_dependency "teams"
-  s.add_dependency "games"
   s.add_dependency "web_style"
 
   s.add_development_dependency "sqlite3"
