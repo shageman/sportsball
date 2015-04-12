@@ -1,4 +1,4 @@
-RSpec.describe "web_ui/teams/index", :type => :view do
+RSpec.describe "teams_ui/teams/index", :type => :view do
   before(:each) do
     assign(:teams, [
                      Teams::Team.create!(

@@ -17,7 +17,7 @@ html
         ul.title-area
           li.name
             h1
-              = link_to root_path do
+              = link_to main_app.root_path do
                 = image_tag "web_style/logo.png", width: "25px"
                 | Predictor
 
@@ -27,9 +27,9 @@ html
 
         section.top-bar-section
           ul.left
-            li =link_to "Teams", teams_path
-            li =link_to "Games", games_path
-            li =link_to "Predictions", new_prediction_path
+            li =link_to "Teams", "/teams_ui/teams"
+            li =link_to "Games", "/web_ui/games"
+            li =link_to "Predictions", "/web_ui/prediction/new"
 
   main
     .row

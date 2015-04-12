@@ -5,7 +5,7 @@ module WebUi
     end
 
     def create
-      predictor = Predictor::Predictor.new(Teams::Team.all)
+      predictor = ::Predictor::Predictor.new(Teams::Team.all)
       predictor.learn(Games::Game.all)
       @prediction = predictor.predict(
           Teams::Team.find(params['first_team']['id']),

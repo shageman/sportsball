@@ -3,6 +3,7 @@ gemfile:
   - components/web_ui/Gemfile
   - components/predictor/Gemfile
   - components/teams/Gemfile
+  - components/teams_ui/Gemfile
   - components/games/Gemfile
 script:
   - travis_retry ./test.sh

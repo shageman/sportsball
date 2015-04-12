@@ -3,6 +3,7 @@ ruby '2.2.2'
 
 path "components" do
   gem "web_ui"
+  gem "teams_ui"
 end
 
 #Ensuring correct version of transitive dependency

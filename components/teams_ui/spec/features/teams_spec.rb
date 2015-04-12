@@ -5,7 +5,7 @@ RSpec.describe "teams admin", :type => :feature do
   end
 
   it "allows for the management of teams" do
-    visit '/web_ui/'
+    visit '/teams_ui/teams'
 
     click_link "Teams"
 

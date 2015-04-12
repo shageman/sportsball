@@ -1,5 +1,5 @@
-RSpec.describe WebUi::TeamsController, :type => :controller do
-  routes { WebUi::Engine.routes }
+RSpec.describe TeamsUi::TeamsController, :type => :controller do
+  routes { TeamsUi::Engine.routes }
 
   let(:valid_attributes) { new_team.as_json }
   let(:invalid_attributes) { new_team.tap { |g| g.name = nil }.as_json }
