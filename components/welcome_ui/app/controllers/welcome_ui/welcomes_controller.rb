@@ -1,4 +1,4 @@
-module WebUi
+module WelcomeUi
   class WelcomesController < ApplicationController
     def show
     end

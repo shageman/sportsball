@@ -3,6 +3,6 @@ require "jquery-rails"
 
 require "web_style"
 
-module WebUi
-  require "web_ui/engine"
+module WelcomeUi
+  require "welcome_ui/engine"
 end

@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby '2.2.2'
 
 path "components" do
-  gem "web_ui"
+  gem "welcome_ui"
   gem "teams_ui"
   gem "games_ui"
   gem "predictor_ui"

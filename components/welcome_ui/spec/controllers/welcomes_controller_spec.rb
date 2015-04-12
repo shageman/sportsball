@@ -1,5 +1,5 @@
-RSpec.describe WebUi::WelcomesController, :type => :controller do
-  routes { WebUi::Engine.routes }
+RSpec.describe WelcomeUi::WelcomesController, :type => :controller do
+  routes { WelcomeUi::Engine.routes }
 
   describe "GET index" do
     it "returns http success" do
