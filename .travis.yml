@@ -5,6 +5,7 @@ gemfile:
   - components/teams/Gemfile
   - components/teams_ui/Gemfile
   - components/games/Gemfile
+  - components/games_ui/Gemfile
 script:
   - travis_retry ./test.sh
 before_install:

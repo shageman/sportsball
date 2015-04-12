@@ -14,6 +14,7 @@ PATH
       predictor
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
+      teams
       web_style
 
 PATH
@@ -161,6 +162,7 @@ DEPENDENCIES
   rspec-rails
   shoulda-matchers
   sqlite3
+  teams!
   trueskill!
   web_style!
   web_ui!
