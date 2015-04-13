@@ -27,9 +27,8 @@ html
 
         section.top-bar-section
           ul.left
-            li =link_to "Teams", "/teams_ui/teams"
-            li =link_to "Games", "/games_ui/games"
-            li =link_to "Predictions", "/predictor_ui/prediction/new"
+            - Rails.application.config.main_nav.each do |item|
+              li =link_to item[:name], item[:link].call
 
   main
     .row
