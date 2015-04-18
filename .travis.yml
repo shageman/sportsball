@@ -6,4 +6,4 @@ script:
 before_install:
   - cd $(dirname $BUNDLE_GEMFILE)
 rvm:
-  - 2.2.1
+  - 2.2.2
