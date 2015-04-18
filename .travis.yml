@@ -2,7 +2,7 @@ gemfile:
   - Gemfile
   - components/app/Gemfile
 script:
-  - ./test.sh
+  - travis_retry ./test.sh
 before_install:
   - cd $(dirname $BUNDLE_GEMFILE)
 rvm:
