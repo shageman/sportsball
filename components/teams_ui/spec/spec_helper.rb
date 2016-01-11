@@ -9,7 +9,6 @@ require 'capybara/rails'
 require 'capybara/rspec'
 
 require 'teams/test_helpers'
-require 'games/test_helpers'
 
 Dir[TeamsUi::Engine.root.join("spec/support/**/*.rb")].each {|f| require f}
 
@@ -38,6 +37,5 @@ RSpec.configure do |config|
     end
   end
 
-  config.include Games::ObjectCreationMethods
   config.include Teams::ObjectCreationMethods
 end
