@@ -6,17 +6,7 @@ GIT
     trueskill (1.0.0)
 
 PATH
-  remote: .
-  specs:
-    games_ui (0.0.1)
-      games
-      jquery-rails (= 3.1.2)
-      rails (= 4.1.9)
-      slim-rails (= 3.0.1)
-      web_style
-
-PATH
-  remote: ../
+  remote: ..
   specs:
     games (0.0.1)
       activerecord (= 4.1.9)
@@ -27,6 +17,16 @@ PATH
       jquery-rails (= 3.1.2)
       rails (= 4.1.9)
       slim-rails (= 3.0.1)
+
+PATH
+  remote: .
+  specs:
+    games_ui (0.0.1)
+      games
+      jquery-rails (= 3.1.2)
+      rails (= 4.1.9)
+      slim-rails (= 3.0.1)
+      web_style
 
 GEM
   remote: https://rubygems.org/
@@ -160,3 +160,6 @@ DEPENDENCIES
   sqlite3
   trueskill!
   web_style!
+
+BUNDLED WITH
+   1.14.6

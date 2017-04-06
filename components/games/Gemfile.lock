@@ -1,15 +1,15 @@
 PATH
+  remote: ..
+  specs:
+    teams (0.0.1)
+      activerecord (= 4.1.9)
+
+PATH
   remote: .
   specs:
     games (0.0.1)
       activerecord (= 4.1.9)
       teams
-
-PATH
-  remote: ../
-  specs:
-    teams (0.0.1)
-      activerecord (= 4.1.9)
 
 GEM
   remote: https://rubygems.org/
@@ -117,3 +117,6 @@ DEPENDENCIES
   shoulda-matchers
   sqlite3
   teams!
+
+BUNDLED WITH
+   1.14.6
